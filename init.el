@@ -5,6 +5,9 @@
 (scroll-bar-mode -1)
 (setq cursor-type 'bar)
 
+;; Less flickery display
+(setq redisplay-dont-pause t)
+
 (defvar base-cfg-dir (file-name-directory load-file-name)
   "Base config dir")
 (defvar custom-vendor-dir (expand-file-name "vendor" base-cfg-dir)
