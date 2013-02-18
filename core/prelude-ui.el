@@ -36,8 +36,8 @@
 ;; the toolbar is just a waste of valuable screen estate
 ;; in a tty tool-bar-mode does not properly auto-load, and is
 ;; already disabled anyway
-(when (fboundp 'tool-bar-mode)
-  (tool-bar-mode -1))
+;;(when (fboundp 'tool-bar-mode)
+;;  (tool-bar-mode -1))
 
 ;; the menu bar is mostly useless as well
 ;; but removing it under OS X doesn't make much sense
@@ -70,9 +70,9 @@
 (setq inhibit-startup-screen t)
 
 ;; nice scrolling
-(setq scroll-margin 0
-      scroll-conservatively 100000
-      scroll-preserve-screen-position 1)
+;;(setq scroll-margin 0
+;;      scroll-conservatively 100000
+;;      scroll-preserve-screen-position 1)
 
 ;; enable y/n answers
 (fset 'yes-or-no-p 'y-or-n-p)

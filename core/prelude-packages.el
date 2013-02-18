@@ -35,6 +35,8 @@
 (require 'package)
 (add-to-list 'package-archives
              '("melpa" . "http://melpa.milkbox.net/packages/") t)
+(add-to-list 'package-archives
+             '("marmalade" . "http://marmalade-repo.org/packages/") t)
 ;; set package-user-dir to be relative to Prelude install path
 (setq package-user-dir (expand-file-name "elpa" prelude-dir))
 (package-initialize)
@@ -44,7 +46,7 @@
                   expand-region flycheck gist guru-mode helm helm-projectile
                   magit magithub melpa
                   rainbow-mode solarized-theme undo-tree
-                  volatile-highlights yasnippet zenburn-theme)
+                  volatile-highlights yasnippet monokai-theme)
   "A list of packages to ensure are installed at launch.")
 
 (defun prelude-packages-installed-p ()
